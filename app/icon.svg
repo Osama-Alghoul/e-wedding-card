@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <radialGradient id="bg" cx="0.5" cy="0.38" r="0.75">
+      <stop offset="0" stop-color="#FFFDF6"/>
+      <stop offset="1" stop-color="#F1E2BF"/>
+    </radialGradient>
+    <linearGradient id="band" x1="0.15" y1="0.1" x2="0.85" y2="0.95">
+      <stop offset="0" stop-color="#F6E1A6"/>
+      <stop offset="0.35" stop-color="#D4A651"/>
+      <stop offset="0.7" stop-color="#9A7028"/>
+      <stop offset="1" stop-color="#C99A45"/>
+    </linearGradient>
+    <linearGradient id="crown" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#DCEAF4"/>
+    </linearGradient>
+    <linearGradient id="pavilion" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0" stop-color="#EEF5FB"/>
+      <stop offset="1" stop-color="#9FBFD6"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <rect x="24" y="24" width="464" height="464" rx="92" fill="none" stroke="#C99A45" stroke-width="4" opacity=".55"/>
+
+  <!-- band -->
+  <path fill="url(#band)" fill-rule="evenodd"
+        d="M256 166a136 136 0 1 1 0 272a136 136 0 1 1 0-272zM256 196a106 106 0 1 0 0 212a106 106 0 1 0 0-212z"/>
+  <path d="M152 262a106 106 0 0 1 60-56" fill="none" stroke="#FFF4CF" stroke-width="7" stroke-linecap="round" opacity=".8"/>
+  <path d="M376 330a126 126 0 0 1-74 92" fill="none" stroke="#7A561C" stroke-width="5" stroke-linecap="round" opacity=".35"/>
+
+  <!-- setting -->
+  <path d="M222 178h68l-12-26h-44z" fill="url(#band)"/>
+  <path d="M228 152l-8-30M284 152l8-30" stroke="#B8893B" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- diamond -->
+  <path d="M196 118l26-34h68l26 34z" fill="url(#crown)" stroke="#B8893B" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M196 118h120l-60 62z" fill="url(#pavilion)" stroke="#B8893B" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M222 84l12 34 22-34 22 34 12-34M196 118l60 62 60-62M234 118l22 62 22-62" fill="none" stroke="#B8893B" stroke-width="1.6" opacity=".7" stroke-linejoin="round"/>
+  <path d="M232 92l-10 18" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- sparkles -->
+  <path d="M376 76c3 18 8 23 26 26-18 3-23 8-26 26-3-18-8-23-26-26 18-3 23-8 26-26z" fill="#D4A651"/>
+  <path d="M144 132c2 11 5 14 16 16-11 2-14 5-16 16-2-11-5-14-16-16 11-2 14-5 16-16z" fill="#E3C88A"/>
+
+  <!-- tiny heart -->
+  <path d="M256 330c-15-11-24-19-24-29a12 12 0 0 1 24-4 12 12 0 0 1 24 4c0 10-9 18-24 29z" fill="#E2A8AE"/>
+</svg>
