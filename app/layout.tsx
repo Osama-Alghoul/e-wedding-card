@@ -30,23 +30,50 @@ const siteUrl =
 
 const title = "أفراح آل الغول | م. أسامة ♥ أ. رُبا";
 const description =
-  "يتشرف السيد أحمد محمد الغول والسيد موسى يوسف العمراني بدعوتكم لحضور حفل زفاف م. أسامة و أ. رُبا — يوم الخميس 29 / 10 / 2026 بعد صلاة العصر، صالة بيت الأناقة.";
+  "بكل الحب والفرح، يتشرف السيد أحمد محمد الغول والسيد موسى يوسف العمراني بدعوتكم لحضور حفل زفاف م. أسامة و أ. رُبا 💍 " +
+  "يوم الخميس الموافق 29 / 10 / 2026 بعد صلاة العصر، في صالة بيت الأناقة (Elegance House) — شارع عمر المختار خلف الإغاثة الطبية. " +
+  "حضوركم يشرفنا ويزيد حفلنا بهجة وسروراً.";
+// Shorter copy for link previews (WhatsApp shows ~2 lines).
+const shareDescription =
+  "💍 حفل زفاف م. أسامة و أ. رُبا — الخميس 29 / 10 / 2026 بعد صلاة العصر، صالة بيت الأناقة (Elegance House). حضوركم يشرفنا ويزيد حفلنا بهجة وسروراً.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title,
   description,
+  applicationName: "أفراح آل الغول",
+  keywords: [
+    "أفراح آل الغول",
+    "دعوة زفاف",
+    "حفل زفاف",
+    "أسامة ورُبا",
+    "أسامة الغول",
+    "آل الغول",
+    "آل العمراني",
+    "صالة بيت الأناقة",
+    "Elegance House",
+    "wedding invitation",
+  ],
+  authors: [{ name: "آل الغول" }],
+  creator: "آل الغول",
+  category: "event",
+  alternates: { canonical: "/" },
+  // A private family invitation: shareable by link, but kept out of search engines.
+  robots: { index: false, follow: false, googleBot: { index: false, follow: false } },
+  formatDetection: { telephone: false, email: false, address: false },
+  appleWebApp: { capable: true, title: "زفاف أسامة ورُبا", statusBarStyle: "default" },
   openGraph: {
     type: "website",
+    url: "/",
     locale: "ar_AR",
     siteName: "أفراح آل الغول",
     title,
-    description,
+    description: shareDescription,
   },
   twitter: {
     card: "summary_large_image",
     title,
-    description,
+    description: shareDescription,
   },
 };
 
