@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Al-Ghoul Wedding//AR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:osama-ruba-wedding-20261029
+DTSTAMP:20261023T000000Z
+DTSTART:20261029T120000Z
+DTEND:20261029T150000Z
+SUMMARY:حفل زفاف م. أسامة و أ. رُبا
+LOCATION:صالة بيت الأناقة (Elegance House) - شارع عمر المختار خلف الإغاثة الطبية
+DESCRIPTION:أفراح آل الغول — بعد صلاة العصر
+END:VEVENT
+END:VCALENDAR
